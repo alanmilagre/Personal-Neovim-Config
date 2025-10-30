@@ -3,15 +3,15 @@ local opt = vim.opt
 
 -- UI
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 opt.signcolumn = "yes"
 opt.termguicolors = true
 opt.cursorline = true
 opt.wrap = false
 
 -- Tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 
@@ -41,5 +41,6 @@ opt.scrolloff = 8
 opt.splitright = true
 opt.splitbelow = true
 
--- Theme
+--Default theme
 vim.cmd("colorscheme kanagawa-dragon")
+

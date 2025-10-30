@@ -1,7 +1,7 @@
 -- lua/plugins/configs.lua
 
 return {
-  -- Basic Debugging Support
+  -- Basic Debugging Support for Lua
   {
     'mfussenegger/nvim-dap',
     config = function()
@@ -56,6 +56,7 @@ return {
     persist_buffer_sort = true,
     separator_style = "thin",
     always_show_bufferline = true,
+  
   },
 })
 
@@ -142,7 +143,7 @@ return {
     build = ':TSUpdate',
     config = function()
       require('nvim-treesitter.configs').setup {
-        highlight = { enable = true },
+        highlight = { enable = false },
         indent = { enable = true },
       }
     end,
@@ -155,7 +156,7 @@ return {
     config = function()
       require('lualine').setup {
         options = {
-          theme = 'gruvbox',
+          theme = 'kanagawa',
           section_separators = { left = '', right = '' },
           component_separators = { left = '', right = '' },
           icons_enabled = true,
