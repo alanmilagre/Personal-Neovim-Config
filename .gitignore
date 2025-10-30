@@ -1,0 +1,6 @@
+# Lazy.nvim cache
+lazy-lock.json
+lazy/
+# Swap files
+*.swp
+*.swo
